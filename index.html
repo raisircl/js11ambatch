@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTN EVENT</title>
+</head>
+<body>
+    <input type="button" value="Okay" id="btnok"/>
+    <input type="button" value="Cancel" id="btncancel"/>
+    
+    <script>
+       var okbutton=document.getElementById("btnok");
+       //anoymous event listener
+       okbutton.addEventListener("click",()=>{
+            alert("Ok button has clicked...");
+       })
+       
+       var cancelbutton=document.getElementById("btncancel");
+       function btncancel_click()
+       {
+        alert("Cancel Button is clicked");
+       }
+       cancelbutton.addEventListener("click",btncancel_click);
+
+    </script>
+</body>
+</html>
